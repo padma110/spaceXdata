@@ -7,14 +7,14 @@ const Display = (props) => {
         if(disData)
         {
             if( urlParams.has('launchyear')){
-                disData = disData.filter((item) => (item.launch_year == urlParams.get('launchyear')));     
+                disData = disData.filter((item) => (item.launch_year === urlParams.get('launchyear')));     
             }
             if(urlParams.has('successfullaunch')){
-                disData = disData.filter((item) => (item.launch_success.toString() == urlParams.get('successfullaunch')));     
+                disData = disData.filter((item) => (item.launch_success.toString() === urlParams.get('successfullaunch')));     
             }
             if(urlParams.has('successfullanding')){
                 disData = disData.filter((item) => (
-                          item.rocket.first_stage.cores[0].landing_intent.toString() ==  urlParams.get('successfullanding')));  
+                          item.rocket.first_stage.cores[0].landing_intent.toString() ===  urlParams.get('successfullanding')));  
             }
             return disData.map((data) => {    
                 return(
