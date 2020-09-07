@@ -24,16 +24,16 @@ code {
   float: left;
 }
 .left {
-  width: 18%;
+  width: 20%;
 }
 .right {
-  width: 82%;
+  width: 80%;
 }
 .img-h{
   width:100%;
 }
 .btn-l{
-  margin:3px 22px!important;
+  margin:3px 24px!important;
   -webkit-border-radius:10px!important;
   -moz-border-radius:10px!important;
   border-radius:10px!important;
